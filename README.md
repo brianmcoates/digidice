@@ -1,4 +1,6 @@
-# Welcome to digidice ![d20](d20.svg "Logo Title Text 2")
+# Welcome to digidice
+![d20](d20.svg "Logo Title Text 2")
+
 A virtual dice rolling app. You can roll (d100, d20, d12, d8, d6, d4).
 
 If you would like to contribute fork the repo, clone the repo to your local machine, then create a branch with 
