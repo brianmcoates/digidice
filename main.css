@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    font-family: Lato,Helvetica,sans-serif;
+    color: #333447;
+    line-height: 1.5
+}
+#logger{
+    overflow: scroll;
+    height: 230px;
+    width: 100%;
+    background: -webkit-linear-gradient(#FF00A6, #FFD205);
+}
+
+#logger p{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+#logger p span{
+    position: absolute;
+    font-size: 12px;
+    padding-left: 8px;
+}
+
+#logger p:last-child span{
+    top: 10px;
+}
+
+#logger p:last-child{
+    font-size: 55px;
+}
+
+.main {
+    padding-top: 16px;
+    background: url("background_sm.svg") no-repeat 80% 70%;
+    height: calc(100vh - 246px);
+}
+
+.flex{
+    justify-content: space-around;
+    display: flex;
+}
+
+.gradient-text{
+    font-size: 24px;
+    background: -webkit-linear-gradient(#FF00A6, #FFD205);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.roll-input{
+    padding: 1px 5px 2px 5px;
+    background: -webkit-linear-gradient(#FF00A6, #FFD205);
+    border: none;
+    border-radius: 4px;
+    height: 20px;
+    width: 13px;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    right: -32px;
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        background: url("background_lg.svg") no-repeat center;
+    }
+}
+
+/*Utility Classes*/
+
+.position-relative{
+    position: relative;
+}
+
+.background-color-black{
+    background-color: #000A33;
+}
+
+.text-center{
+    text-align: center;
+}

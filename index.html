@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi Dice Roller</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="background-color-black">
+    <div id="logger">
+    </div>
+    <div class="main text-center">
+        <div class="flex">
+                <div class="d20">
+                    <div class="position-relative dice-container">
+                        <img id="d20" class="dice" src="d20.svg" alt="d20"  data-dice="20">
+                        <input class="roll-input" type="text" name="d20">
+                    </div>
+                    <p class="gradient-text">D20</p>
+                </div>
+                <div class="d6" >
+                    <div class="position-relative dice-container">
+                        <img id="d6" class="dice" src="d6.svg" alt="d6" data-dice="6">
+                        <input class="roll-input" type="text" name="d6">
+                    </div>
+                    <p class="gradient-text">D6</p>
+                </div>
+            </div>
+        <div class="flex">
+                <div class="d4" >
+                    <div class="position-relative dice-container">
+                        <img id="d4" class="dice" src="d4.svg" alt="d4" data-dice="4">
+                        <input class="roll-input" type="text" name="d4">
+                    </div>
+                    <p class="gradient-text">D4</p>
+                </div>
+                <div class="d8" >
+                    <div class="position-relative dice-container">
+                        <img id="d8" class="dice" src="d8.svg" alt="d8" data-dice="8">
+                        <input class="roll-input" type="text" name="d8">
+                    </div>
+                    <p class="gradient-text">D8</p>
+                </div>
+            </div>
+        <div class="flex">
+                <div class="d100">
+                    <div class="position-relative dice-container">
+                        <img id="d100" class="dice" src="d100.svg" alt="d100" data-dice="100">
+                        <input class="roll-input" type="text" name="d100">
+                    </div>
+                    <p class="gradient-text">D100</p>
+                </div>
+                <div class="d12">
+                    <div class="position-relative dice-container">
+                        <img id="d12" class="dice" src="d12.svg" alt="d12"  data-dice="12">
+                        <input class="roll-input" type="text" name="d12">
+                    </div>
+                    <p class="gradient-text">D12</p>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
