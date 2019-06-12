@@ -7,7 +7,7 @@
     function getRandomNumber(highestNumber, howManyRolls){
         var allTheRolls = [];
         var sum = 0;
-        if(howManyRolls !== "1"){
+        if(howManyRolls > "1"){
             for(var i = 0; i < howManyRolls; i++){
                 var rolling = roll(highestNumber)
                 allTheRolls.push(rolling);
