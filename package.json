@@ -1,0 +1,29 @@
+{
+  "name": "digidice",
+  "version": "2.0.0",
+  "description": "A digital dice roller",
+  "main": "index.html",
+  "dependencies": {
+    "rxjs": "^6.5.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://brianmcoates@github.com/brianmcoates/digidice.git"
+  },
+  "author": "Brian Coates",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianmcoates/digidice/issues"
+  },
+  "homepage": "https://github.com/brianmcoates/digidice#readme"
+}
