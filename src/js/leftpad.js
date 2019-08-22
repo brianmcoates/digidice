@@ -1,6 +1,4 @@
-"use strict";
-
-function leftPad(str, len, ch) {
+export function leftPad(str, len, ch) {
   const cache = [
     "",
     " ",
