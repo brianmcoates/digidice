@@ -1,5 +1,8 @@
-import { leftPad } from './leftpad';
+import { fromEvent } from 'rxjs'
+import { map } from 'rxjs/operators'
 
-const serNos = [6934, 23111, 23114, 1001, 211161];
-const strSNos = serNos.map(sn => leftPad(sn, 8, '0'));
-console.log(strSNos);
+const diceClick$ = fromEvent(document.getElementsByClassName('dice'), 'click');
+
+diceClick$.subscribe(()=>{
+  console.log(1)
+});
