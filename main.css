@@ -33,14 +33,16 @@ body{
 }
 
 .main {
+    position: relative;
     padding-top: 16px;
     background: url("background_sm.svg") no-repeat 80% 70%;
     height: calc(100vh - 246px);
 }
 
 .flex{
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
+    padding: 0 16px;
 }
 
 .gradient-text{
@@ -54,18 +56,23 @@ body{
     padding: 1px 5px 2px 5px;
     background: -webkit-linear-gradient(#FF00A6, #FFD205);
     border: none;
-    border-radius: 4px;
-    height: 20px;
-    width: 13px;
-    position: absolute;
-    transform: translate(0, -50%);
-    top: 50%;
-    right: -32px;
+    border-radius: 20px;
+    height: 85px;
+    width: 87px;
+    font-size: 44px;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px){
     .main{
         background: url("background_lg.svg") no-repeat center;
+    }
+
+    .center-screen {
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        top: 29%;
     }
 }
 
@@ -81,4 +88,8 @@ body{
 
 .text-center{
     text-align: center;
+}
+
+.m-b-0 {
+    margin-bottom: 0;
 }
