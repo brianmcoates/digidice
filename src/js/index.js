@@ -34,7 +34,7 @@ const randomNumbers$ = diceClick$.pipe(
 const logToScreen$ = randomNumbers$.pipe(
   map((rolls)=>{
     rolls.forEach((roll, index)=>{
-      const isSum = rolls.length === index;
+      const isSum = rolls.length - 1 === index;
       logDiceRolls(roll.roll, roll.dice, isSum)
     })
   })
@@ -42,7 +42,7 @@ const logToScreen$ = randomNumbers$.pipe(
 
 logToScreen$.subscribe();
 
-function logDiceRolls(randomNumber, diceRolled){
+function logDiceRolls(randomNumber, diceRolled, isSum){
   // create logic that loops over the numbers rolled and logs out the html.
   const mainLog = document.getElementById('logger');
   const htmlNode = document.createElement('P');
@@ -53,7 +53,7 @@ function logDiceRolls(randomNumber, diceRolled){
   spanNode.appendChild(spanTextNode);
   htmlNode.appendChild(textNode);
   htmlNode.appendChild(spanNode);
-  mainLog.appendChild(htmlNode);
+  isSum ? mainLog.appendChild(htmlNode).setAttribute('class', 'sum') : mainLog.appendChild(htmlNode);
   mainLog.scrollTo(0,mainLog.scrollHeight)
 }
 
