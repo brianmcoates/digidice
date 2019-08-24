@@ -30,6 +30,7 @@ const randomNumbers$ = diceClick$.pipe(
   }
 
 ));
+// create new observable that listenings to random numbers and analyzes the array to set hits and did i glitch to true or false
 
 const logToScreen$ = randomNumbers$.pipe(
   map((rolls)=>{
