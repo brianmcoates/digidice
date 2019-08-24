@@ -12,14 +12,12 @@ body{
 }
 
 #logger p{
-    position: relative;
-    text-align: center;
-    margin: 0;
+    margin: 16px;
     font-size: 20px;
+    display: inline-block;
 }
 
 #logger p span{
-    position: absolute;
     font-size: 12px;
     padding-left: 8px;
 }
@@ -30,6 +28,10 @@ body{
 
 #logger p:last-child{
     font-size: 55px;
+}
+
+.sum {
+    border-bottom: 2px solid #333447;
 }
 
 .main {
