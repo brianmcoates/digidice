@@ -82,7 +82,17 @@ body{
 .text-center{
     text-align: center;
 }
+.m-b-0 {
+    margin-bottom: 0;
+}
 
-.hidden {
-    display: none;
+.show-for-screen-reader {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
