@@ -39,7 +39,8 @@ body {
   position: relative;
   padding-top: 16px;
   background: url("background_sm.svg") no-repeat 80% 70%;
-  height: 70vh;
+  /*16px is the padding top*/
+  height: calc(70vh - 16px);
   overflow: scroll;
 }
 
@@ -110,4 +111,8 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.align-items-center {
+  align-items: center;
 }
