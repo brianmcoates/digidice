@@ -36,6 +36,13 @@ body {
   width: 75px;
 }
 
+.roll-input::-webkit-inner-spin-button,
+.roll-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 .sum {
   border-bottom: 2px solid #333447;
 }
@@ -71,6 +78,9 @@ body {
   width: 75px;
   font-size: 44px;
   text-align: center;
+}
+.roll-input-label {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
