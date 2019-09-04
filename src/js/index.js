@@ -61,5 +61,3 @@ function logDiceRolls(randomNumber, diceRolled, isSum){
 function roll(highestNumber){
   return Math.ceil(Math.random() * highestNumber)
 };
-
-// })();
