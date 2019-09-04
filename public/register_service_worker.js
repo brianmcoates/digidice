@@ -1,7 +1,7 @@
 if ('serviceWorker' in navigator && 'PushManager' in window) {
   console.log('Service Worker and Push is supported');
 
-  navigator.serviceWorker.register('./public/service_worker.js')
+  navigator.serviceWorker.register('./service_worker.js')
     .then(function(swReg) {
       console.log('Service Worker is registered', swReg);
 
